@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head lang='en'>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>rollup-starter-app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            font-weight: 300;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="bundle.css">
+</head>
+</head>
+<body>
+<header class="header">
+    <img class="header-logo" src="../static/logo.png" alt="logo">
+    <div class="header-balance">
+        <span class="roboto-bold" id="coinsValue">2000</span>
+        <img class="header-balance-coins" src="../static/coins.png" alt="coins">
+    </div>
+</header>
+<main>
+    <div class="win-lines-wr">
+        <img id='win-line1' class="win-lines" src="../static/lines/line1.png" alt="line">
+        <img id='win-line2' class="win-lines" src="../static/lines/line2.png" alt="line">
+        <img id='win-line3' class="win-lines" src="../static/lines/line3.png" alt="line">
+        <img id='win-line4' class="win-lines" src="../static/lines/line4.png" alt="line">
+        <img id='win-line5' class="win-lines" src="../static/lines/line5.png" alt="line">
+        <img id='win-line6' class="win-lines" src="../static/lines/line6.png" alt="line">
+        <img id='win-line7' class="win-lines" src="../static/lines/line7.png" alt="line">
+        <img id='win-line8' class="win-lines" src="../static/lines/line8.png" alt="line">
+        <img id='win-line9' class="win-lines" src="../static/lines/line9.png" alt="line">
+    </div>
+
+    <div class="lines-wr">
+        <div class="lines">
+            <div id="firstLine">
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+            </div>
+        </div>
+        <div class="lines">
+            <div id="secondLine">
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+            </div>
+        </div>
+        <div class="lines">
+            <div id="thirdLine">
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+            </div>
+        </div>
+        <div class="lines">
+            <div id="fourthLine">
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+            </div>
+        </div>
+        <div class="lines">
+            <div id="fifthLine">
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+                <div class="symbol">
+                    <img src="../static/symbols/SymbolA.png" alt="A">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <button class="footer-button" id='autoButton'></button>
+    <div class="footer-bet">
+        <div class="footer-bet-text"><img src="./static/text-bet.png" alt="bet"> <span id='betValue'>10</span></div>
+        <button id='minusButton'><img src="./static/button-minus.png" alt="minus"></button>
+        <button id='plusButton'><img src="./static/button-plus.png" alt="plus"></button>
+        <button id='maxButton'><img src="./static/button-max.png" alt="max"></button>
+    </div>
+    <button class="footer-button" id='startButton'></button>
+</footer>
+<script src='bundle.js'></script>
+</body>
+</html>

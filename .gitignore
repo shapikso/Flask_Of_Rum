@@ -1,0 +1,11 @@
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/node_modules/
+/.idea/*
+/.idea/
+/public/assets/
+/public/static/
+/public/bundle.css
+/public/bundle.js
+/public/bundle.js.map

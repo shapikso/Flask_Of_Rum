@@ -1,0 +1,138 @@
+.header {
+  background: black;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  position: relative;
+  justify-content: center;
+
+  &-logo {
+    max-height: 85px;
+   }
+
+  &-balance {
+    position: absolute;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    right: 0;
+
+    &-coins {
+      max-height: 75px;
+    }
+  }
+}
+
+.footer {
+  background: black;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  padding: 0 20px;
+
+  &-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-bet {
+    display: flex;
+    font-size: 72px;
+    column-gap: 14px;
+    align-items: center;
+
+    &-text {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      min-width: 258px;
+    }
+
+    button {
+      background: transparent;
+      color: white;
+      font-size: 24px;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+#startButton {
+  max-width: 244px;
+  width: 100%;
+  background-image: url("../static/button-start.png");
+  background-size: cover;
+  aspect-ratio: 244 / 124;
+  &:active{
+    background-image: url("../static/button-start-active.png");
+  }
+}
+
+#autoButton {
+  max-width: 244px;
+  width: 100%;
+  background-image: url("../static/button-auto.png");
+  background-size: cover;
+  aspect-ratio: 244 / 124;
+  &:active{
+    background-image: url("../static/button-auto-active.png");
+  }
+}
+
+.symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  img {
+    max-height: 188px;
+  }
+}
+
+.lines {
+  border-left: 8px solid white;
+  border-right: 8px solid white;
+
+  & > div {
+    height: 100%;
+    max-width: 284px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 34px;
+  }
+  &-wr {
+    width: 100%;
+    max-width: 978px;
+    background-image: url("../static/BGSlotMachine.png");
+    height: 100%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+  }
+}
+
+.win-lines {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+
+  &-wr {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
